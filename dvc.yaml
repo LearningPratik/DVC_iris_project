@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: python src/models/train.py
+    deps:
+      - data/iris.csv
+    outs:
+      - model.joblib
+  

@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/models/train.py
+    deps:
+    - path: data/iris.csv
+      hash: md5
+      md5: bab8c78b12bd4b32b7964f775ed5a24d
+      size: 4617
+    outs:
+    - path: model.joblib
+      hash: md5
+      md5: a29ba476d8c44da0ecc658f9e9f38cc6
+      size: 11894
